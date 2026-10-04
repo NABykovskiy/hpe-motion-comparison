@@ -1,0 +1,36 @@
+{
+  "model": "OpenPose",
+  "implementation": "OpenPose 1.7.0 (официальный Windows CPU-билд CMU), BODY_25 (bottom-up, Part Affinity Fields), Caffe CPU",
+  "model_files": [
+    "pose_iter_584000.caffemodel"
+  ],
+  "person_selection": "number_people_max=1 (OpenPose отбирает одного человека)",
+  "parameters": {
+    "model_pose": "BODY_25",
+    "net_resolution": "default (-1x368)",
+    "render_pose": 0,
+    "display": 0
+  },
+  "device": "CPU",
+  "cpu": {
+    "model": "13th Gen Intel(R) Core(TM) i9-13980HX",
+    "logical_processors": 32
+  },
+  "video": {
+    "file": "test_dance_30s.mp4",
+    "resolution": "1920x1080",
+    "fps": 25.0
+  },
+  "frames_processed": 751,
+  "frames_with_detection": 725,
+  "detection_rate": 0.9654,
+  "mean_confidence": 0.5943,
+  "processing_time_s": 13756.364,
+  "processing_fps": 0.05,
+  "timing_note": "второй вызов OpenPoseDemo по полному видео (после короткого прогревочного вызова на первых кадрах того же видео, см. поле warmup), включая декодирование видео и однократную загрузку модели в начале вызова (у Python-моделей загрузка выполнена до замера). Полный прогревочный проход не выполнялся: OpenPose — внешний процесс, каждый вызов перезагружает модель, между вызовами переносится только кэш ОС",
+  "warmup": {
+    "frames": 30,
+    "time_s": 1060.733
+  },
+  "date": "2026-09-28T02:37:37"
+}

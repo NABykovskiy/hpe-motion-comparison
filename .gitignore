@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Model weights — download links and SHA-256 in models/README.md
+models/*
+!models/README.md
+
+# OpenPose portable build (binaries ~350 MB) — see models/README.md
+openpose/
+
+# Downloaded archives
+_downloads/
+
+# Source video (standard YouTube license — do not redistribute)
+data/
+
+# Rendered previews contain original video frames (license)
+results/*/preview.mp4
+
+# Raw per-frame OpenPose JSONs (derived results are in results/openpose/keypoints.csv)
+results/openpose/openpose_json/

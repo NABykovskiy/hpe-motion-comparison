@@ -1,0 +1,29 @@
+{
+  "model": "BlazePose",
+  "implementation": "MediaPipe 1.0.1 Tasks API (PoseLandmarker)",
+  "model_file": "pose_landmarker_full.task",
+  "num_poses": 1,
+  "thresholds": {
+    "min_pose_detection_confidence": 0.5,
+    "min_pose_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5
+  },
+  "device": "CPU",
+  "cpu": {
+    "model": "13th Gen Intel(R) Core(TM) i9-13980HX",
+    "logical_processors": 32
+  },
+  "video": {
+    "file": "test_dance_30s.mp4",
+    "resolution": "1920x1080",
+    "fps": 25.0
+  },
+  "frames_processed": 751,
+  "frames_with_detection": 733,
+  "detection_rate": 0.976,
+  "mean_confidence": 0.9054,
+  "processing_time_s": 21.196,
+  "processing_fps": 35.43,
+  "timing_note": "второй проход (после прогревочного), включая декодирование кадров",
+  "date": "2026-09-27T20:34:46"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "BlazePose",
+  "video": "test_dance_30s.mp4",
+  "frames": 751,
+  "conf_threshold": 0.3,
+  "groups": {
+    "head": {
+      "mean_m": 0.0675,
+      "median_m": 0.0409,
+      "D_j": 0.0332,
+      "valid_frames": 720,
+      "valid_rate": 0.9587
+    },
+    "left_arm": {
+      "mean_m": 0.1263,
+      "median_m": 0.0605,
+      "D_j": 0.076,
+      "valid_frames": 720,
+      "valid_rate": 0.9587
+    },
+    "right_arm": {
+      "mean_m": 0.1162,
+      "median_m": 0.0584,
+      "D_j": 0.068,
+      "valid_frames": 720,
+      "valid_rate": 0.9587
+    },
+    "left_leg": {
+      "mean_m": 0.0936,
+      "median_m": 0.0402,
+      "D_j": 0.0574,
+      "valid_frames": 720,
+      "valid_rate": 0.9587
+    },
+    "right_leg": {
+      "mean_m": 0.1002,
+      "median_m": 0.0449,
+      "D_j": 0.0609,
+      "valid_frames": 720,
+      "valid_rate": 0.9587
+    }
+  }
+}

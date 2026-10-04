@@ -1,0 +1,103 @@
+== blazepose == детекция 733/751
+   0 nose   med=0.999 low=   0 nan=   0
+   1 l_eye  med=0.999 low=   0 nan=   0
+   2 r_eye  med=0.999 low=   0 nan=   0
+   3 l_ear  med=0.998 low=   0 nan=   0
+   4 r_ear  med=0.998 low=   0 nan=   0
+   5 l_sho  med=1.000 low=   0 nan=   0
+   6 r_sho  med=1.000 low=   0 nan=   0
+   7 l_elb  med=0.899 low=  42 nan=   0
+   8 r_elb  med=0.927 low=   6 nan=   0
+   9 l_wri  med=0.826 low=  19 nan=   0
+  10 r_wri  med=0.872 low=  17 nan=   0
+  11 l_hip  med=0.999 low=   0 nan=   0
+  12 r_hip  med=0.999 low=   0 nan=   0
+  13 l_knee med=0.869 low=   0 nan=   0
+  14 r_knee med=0.884 low=   0 nan=   0
+  15 l_ank  med=0.839 low=  26 nan=   0
+  16 r_ank  med=0.849 low=  22 nan=   0
+  ИТОГО точек=12461 low=132 (1.06%) nan=0 (0.00%)
+  вне границ кадра: x=6 y=95 из 12461
+
+== rtmpose == детекция 750/751
+   0 nose   med=0.697 low=  21 nan=   0
+   1 l_eye  med=0.688 low=  20 nan=   0
+   2 r_eye  med=0.710 low=  27 nan=   0
+   3 l_ear  med=0.696 low=  15 nan=   0
+   4 r_ear  med=0.755 low=  25 nan=   0
+   5 l_sho  med=0.732 low=  10 nan=   0
+   6 r_sho  med=0.764 low=   8 nan=   0
+   7 l_elb  med=0.723 low=  29 nan=   0
+   8 r_elb  med=0.765 low=  17 nan=   0
+   9 l_wri  med=0.654 low=  42 nan=   0
+  10 r_wri  med=0.722 low=  25 nan=   0
+  11 l_hip  med=0.640 low=   4 nan=   0
+  12 r_hip  med=0.644 low=   3 nan=   0
+  13 l_knee med=0.691 low=  24 nan=   0
+  14 r_knee med=0.686 low=  21 nan=   0
+  15 l_ank  med=0.664 low=  27 nan=   0
+  16 r_ank  med=0.657 low=  26 nan=   0
+  ИТОГО точек=12750 low=344 (2.70%) nan=0 (0.00%)
+  вне границ кадра: x=2 y=65 из 12750
+
+== rtmo == детекция 666/751
+   0 nose   med=0.967 low=  40 nan=   0
+   1 l_eye  med=0.915 low= 125 nan=   0
+   2 r_eye  med=0.947 low=  81 nan=   0
+   3 l_ear  med=0.565 low= 235 nan=   0
+   4 r_ear  med=0.815 low=  95 nan=   0
+   5 l_sho  med=0.997 low=   0 nan=   0
+   6 r_sho  med=0.998 low=   0 nan=   0
+   7 l_elb  med=0.996 low=   4 nan=   0
+   8 r_elb  med=0.997 low=   1 nan=   0
+   9 l_wri  med=0.987 low=  21 nan=   0
+  10 r_wri  med=0.992 low=   6 nan=   0
+  11 l_hip  med=0.998 low=   0 nan=   0
+  12 r_hip  med=0.998 low=   0 nan=   0
+  13 l_knee med=0.994 low=  23 nan=   0
+  14 r_knee med=0.995 low=  19 nan=   0
+  15 l_ank  med=0.980 low=  83 nan=   0
+  16 r_ank  med=0.983 low=  72 nan=   0
+  ИТОГО точек=11322 low=805 (7.11%) nan=0 (0.00%)
+  вне границ кадра: x=2 y=74 из 11322
+
+== openpose == детекция 725/751
+   0 nose   med=0.882 low= 120 nan=   0
+   1 l_eye  med=0.853 low= 210 nan=   0
+   2 r_eye  med=0.880 low= 144 nan=   0
+   3 l_ear  med=0.393 low= 348 nan=   0
+   4 r_ear  med=0.872 low= 166 nan=   0
+   5 l_sho  med=0.794 low=  97 nan=   0
+   6 r_sho  med=0.803 low=  77 nan=   0
+   7 l_elb  med=0.823 low= 141 nan=   0
+   8 r_elb  med=0.864 low=  93 nan=   0
+   9 l_wri  med=0.816 low= 181 nan=   0
+  10 r_wri  med=0.851 low= 109 nan=   0
+  11 l_hip  med=0.578 low= 148 nan=   0
+  12 r_hip  med=0.585 low= 122 nan=   0
+  13 l_knee med=0.650 low= 155 nan=   0
+  14 r_knee med=0.656 low= 135 nan=   0
+  15 l_ank  med=0.473 low= 276 nan=   0
+  16 r_ank  med=0.491 low= 240 nan=   0
+  ИТОГО точек=12325 low=2762 (22.41%) nan=0 (0.00%)
+  вне границ кадра: x=0 y=0 из 12325
+
+=== Тяжёлый хвост m_head ===
+blazepose   n=720 top-5% кадров дают 25% суммы m_head, mean=0.0675 median=0.0409
+rtmpose     n=723 top-5% кадров дают 55% суммы m_head, mean=0.1437 median=0.0477
+rtmo        n=650 top-5% кадров дают 26% суммы m_head, mean=0.0647 median=0.0386
+openpose    n=523 top-5% кадров дают 25% суммы m_head, mean=0.0581 median=0.0370
+
+== Диагностика всплесков m_head (RTMPose): сырые опорные величины ==
+медиана d(hip)=9.4px, d(sho)=9.7px, торс=238.0px
+ кадр   m_head   d(hip)px  d(sho)px  торс(t-1)->t  conf(hip)
+  542 6.8277      47.5     411.9  430.9-> 79.7   0.397
+  578 5.5285      13.9     100.0   95.2-> 20.8   0.366
+  576 3.1892      97.3     106.0   51.6->146.5   0.422
+  585 3.0940     108.9     141.8  179.3-> 72.6   0.332
+  572 2.9492      65.6     183.1  226.3-> 49.8   0.321
+  579 2.9023      24.4      15.4   20.8-> 53.9   0.315
+  547 2.5863       8.8     632.9  369.4->269.8   0.433
+  571 2.2260      74.1      41.0  140.7->226.3   0.317
+  463 2.1641      18.9      39.6   76.0-> 38.9   0.397
+  573 1.9146      58.6      58.5   49.8-> 88.8   0.437

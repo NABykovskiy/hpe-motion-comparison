@@ -1,0 +1,714 @@
+{
+  "stats": [
+    {
+      "model": "blazepose",
+      "group": "m_head",
+      "mean": 0.0675,
+      "median": 0.0409,
+      "D_j": 0.0332,
+      "valid_pct": 95.9,
+      "autocorr_lag1": 0.727
+    },
+    {
+      "model": "blazepose",
+      "group": "m_left_arm",
+      "mean": 0.1263,
+      "median": 0.0605,
+      "D_j": 0.076,
+      "valid_pct": 95.9,
+      "autocorr_lag1": 0.574
+    },
+    {
+      "model": "blazepose",
+      "group": "m_right_arm",
+      "mean": 0.1162,
+      "median": 0.0584,
+      "D_j": 0.068,
+      "valid_pct": 95.9,
+      "autocorr_lag1": 0.537
+    },
+    {
+      "model": "blazepose",
+      "group": "m_left_leg",
+      "mean": 0.0936,
+      "median": 0.0402,
+      "D_j": 0.0574,
+      "valid_pct": 95.9,
+      "autocorr_lag1": 0.527
+    },
+    {
+      "model": "blazepose",
+      "group": "m_right_leg",
+      "mean": 0.1002,
+      "median": 0.0449,
+      "D_j": 0.0609,
+      "valid_pct": 95.9,
+      "autocorr_lag1": 0.498
+    },
+    {
+      "model": "rtmpose",
+      "group": "m_head",
+      "mean": 0.1437,
+      "median": 0.0477,
+      "D_j": 0.0957,
+      "valid_pct": 96.3,
+      "autocorr_lag1": 0.497
+    },
+    {
+      "model": "rtmpose",
+      "group": "m_left_arm",
+      "mean": 0.2117,
+      "median": 0.0651,
+      "D_j": 0.1393,
+      "valid_pct": 96.8,
+      "autocorr_lag1": 0.57
+    },
+    {
+      "model": "rtmpose",
+      "group": "m_right_arm",
+      "mean": 0.1923,
+      "median": 0.058,
+      "D_j": 0.132,
+      "valid_pct": 96.8,
+      "autocorr_lag1": 0.502
+    },
+    {
+      "model": "rtmpose",
+      "group": "m_left_leg",
+      "mean": 0.1286,
+      "median": 0.0446,
+      "D_j": 0.0901,
+      "valid_pct": 96.8,
+      "autocorr_lag1": 0.524
+    },
+    {
+      "model": "rtmpose",
+      "group": "m_right_leg",
+      "mean": 0.1458,
+      "median": 0.0473,
+      "D_j": 0.106,
+      "valid_pct": 96.8,
+      "autocorr_lag1": 0.508
+    },
+    {
+      "model": "rtmo",
+      "group": "m_head",
+      "mean": 0.0647,
+      "median": 0.0386,
+      "D_j": 0.0311,
+      "valid_pct": 86.6,
+      "autocorr_lag1": 0.664
+    },
+    {
+      "model": "rtmo",
+      "group": "m_left_arm",
+      "mean": 0.0987,
+      "median": 0.0431,
+      "D_j": 0.0512,
+      "valid_pct": 87.2,
+      "autocorr_lag1": 0.482
+    },
+    {
+      "model": "rtmo",
+      "group": "m_right_arm",
+      "mean": 0.0889,
+      "median": 0.0433,
+      "D_j": 0.0425,
+      "valid_pct": 87.2,
+      "autocorr_lag1": 0.568
+    },
+    {
+      "model": "rtmo",
+      "group": "m_left_leg",
+      "mean": 0.0562,
+      "median": 0.0319,
+      "D_j": 0.0299,
+      "valid_pct": 87.2,
+      "autocorr_lag1": 0.435
+    },
+    {
+      "model": "rtmo",
+      "group": "m_right_leg",
+      "mean": 0.0596,
+      "median": 0.0357,
+      "D_j": 0.0318,
+      "valid_pct": 87.2,
+      "autocorr_lag1": 0.415
+    },
+    {
+      "model": "openpose",
+      "group": "m_head",
+      "mean": 0.0581,
+      "median": 0.037,
+      "D_j": 0.0283,
+      "valid_pct": 69.6,
+      "autocorr_lag1": 0.633
+    },
+    {
+      "model": "openpose",
+      "group": "m_left_arm",
+      "mean": 0.0783,
+      "median": 0.0418,
+      "D_j": 0.0423,
+      "valid_pct": 70.7,
+      "autocorr_lag1": 0.587
+    },
+    {
+      "model": "openpose",
+      "group": "m_right_arm",
+      "mean": 0.0753,
+      "median": 0.0405,
+      "D_j": 0.0349,
+      "valid_pct": 70.7,
+      "autocorr_lag1": 0.628
+    },
+    {
+      "model": "openpose",
+      "group": "m_left_leg",
+      "mean": 0.0516,
+      "median": 0.0411,
+      "D_j": 0.0294,
+      "valid_pct": 70.7,
+      "autocorr_lag1": 0.472
+    },
+    {
+      "model": "openpose",
+      "group": "m_right_leg",
+      "mean": 0.0573,
+      "median": 0.0424,
+      "D_j": 0.0342,
+      "valid_pct": 70.7,
+      "autocorr_lag1": 0.272
+    }
+  ],
+  "detection": [
+    {
+      "model": "blazepose",
+      "frames_total": 751,
+      "frames_detected": 733,
+      "detection_pct": 97.6,
+      "miss_clusters": [
+        {
+          "first": 0,
+          "last": 4,
+          "n": 5
+        },
+        {
+          "first": 332,
+          "last": 332,
+          "n": 1
+        },
+        {
+          "first": 557,
+          "last": 558,
+          "n": 2
+        },
+        {
+          "first": 561,
+          "last": 561,
+          "n": 1
+        },
+        {
+          "first": 565,
+          "last": 565,
+          "n": 1
+        },
+        {
+          "first": 578,
+          "last": 578,
+          "n": 1
+        },
+        {
+          "first": 581,
+          "last": 581,
+          "n": 1
+        },
+        {
+          "first": 583,
+          "last": 583,
+          "n": 1
+        },
+        {
+          "first": 585,
+          "last": 585,
+          "n": 1
+        },
+        {
+          "first": 587,
+          "last": 587,
+          "n": 1
+        },
+        {
+          "first": 591,
+          "last": 591,
+          "n": 1
+        },
+        {
+          "first": 685,
+          "last": 685,
+          "n": 1
+        },
+        {
+          "first": 707,
+          "last": 707,
+          "n": 1
+        }
+      ]
+    },
+    {
+      "model": "rtmpose",
+      "frames_total": 751,
+      "frames_detected": 750,
+      "detection_pct": 99.9,
+      "miss_clusters": [
+        {
+          "first": 0,
+          "last": 0,
+          "n": 1
+        }
+      ]
+    },
+    {
+      "model": "rtmo",
+      "frames_total": 751,
+      "frames_detected": 666,
+      "detection_pct": 88.7,
+      "miss_clusters": [
+        {
+          "first": 0,
+          "last": 1,
+          "n": 2
+        },
+        {
+          "first": 6,
+          "last": 9,
+          "n": 4
+        },
+        {
+          "first": 377,
+          "last": 377,
+          "n": 1
+        },
+        {
+          "first": 512,
+          "last": 512,
+          "n": 1
+        },
+        {
+          "first": 527,
+          "last": 527,
+          "n": 1
+        },
+        {
+          "first": 529,
+          "last": 548,
+          "n": 20
+        },
+        {
+          "first": 550,
+          "last": 564,
+          "n": 15
+        },
+        {
+          "first": 566,
+          "last": 587,
+          "n": 22
+        },
+        {
+          "first": 591,
+          "last": 591,
+          "n": 1
+        },
+        {
+          "first": 622,
+          "last": 623,
+          "n": 2
+        },
+        {
+          "first": 678,
+          "last": 693,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "model": "openpose",
+      "frames_total": 751,
+      "frames_detected": 725,
+      "detection_pct": 96.5,
+      "miss_clusters": [
+        {
+          "first": 0,
+          "last": 1,
+          "n": 2
+        },
+        {
+          "first": 512,
+          "last": 513,
+          "n": 2
+        },
+        {
+          "first": 533,
+          "last": 533,
+          "n": 1
+        },
+        {
+          "first": 538,
+          "last": 538,
+          "n": 1
+        },
+        {
+          "first": 541,
+          "last": 542,
+          "n": 2
+        },
+        {
+          "first": 545,
+          "last": 545,
+          "n": 1
+        },
+        {
+          "first": 548,
+          "last": 548,
+          "n": 1
+        },
+        {
+          "first": 556,
+          "last": 556,
+          "n": 1
+        },
+        {
+          "first": 569,
+          "last": 569,
+          "n": 1
+        },
+        {
+          "first": 571,
+          "last": 575,
+          "n": 5
+        },
+        {
+          "first": 586,
+          "last": 586,
+          "n": 1
+        },
+        {
+          "first": 589,
+          "last": 589,
+          "n": 1
+        },
+        {
+          "first": 681,
+          "last": 681,
+          "n": 1
+        },
+        {
+          "first": 683,
+          "last": 684,
+          "n": 2
+        },
+        {
+          "first": 689,
+          "last": 689,
+          "n": 1
+        },
+        {
+          "first": 691,
+          "last": 691,
+          "n": 1
+        },
+        {
+          "first": 693,
+          "last": 694,
+          "n": 2
+        }
+      ]
+    }
+  ],
+  "common_subset": [
+    {
+      "group": "m_head",
+      "model": "blazepose",
+      "n_common": 511,
+      "mean": 0.0535,
+      "median": 0.0332,
+      "D_j": 0.0263,
+      "autocorr_lag1": 0.717
+    },
+    {
+      "group": "m_head",
+      "model": "rtmpose",
+      "n_common": 511,
+      "mean": 0.0703,
+      "median": 0.0367,
+      "D_j": 0.0335,
+      "autocorr_lag1": 0.822
+    },
+    {
+      "group": "m_head",
+      "model": "rtmo",
+      "n_common": 511,
+      "mean": 0.0553,
+      "median": 0.0341,
+      "D_j": 0.025,
+      "autocorr_lag1": 0.683
+    },
+    {
+      "group": "m_head",
+      "model": "openpose",
+      "n_common": 511,
+      "mean": 0.0586,
+      "median": 0.0375,
+      "D_j": 0.0286,
+      "autocorr_lag1": 0.632
+    },
+    {
+      "group": "m_left_arm",
+      "model": "blazepose",
+      "n_common": 520,
+      "mean": 0.0993,
+      "median": 0.0371,
+      "D_j": 0.059,
+      "autocorr_lag1": 0.594
+    },
+    {
+      "group": "m_left_arm",
+      "model": "rtmpose",
+      "n_common": 520,
+      "mean": 0.1119,
+      "median": 0.0428,
+      "D_j": 0.0604,
+      "autocorr_lag1": 0.659
+    },
+    {
+      "group": "m_left_arm",
+      "model": "rtmo",
+      "n_common": 520,
+      "mean": 0.0813,
+      "median": 0.0339,
+      "D_j": 0.038,
+      "autocorr_lag1": 0.561
+    },
+    {
+      "group": "m_left_arm",
+      "model": "openpose",
+      "n_common": 520,
+      "mean": 0.079,
+      "median": 0.0427,
+      "D_j": 0.0424,
+      "autocorr_lag1": 0.587
+    },
+    {
+      "group": "m_right_arm",
+      "model": "blazepose",
+      "n_common": 520,
+      "mean": 0.0985,
+      "median": 0.0391,
+      "D_j": 0.0553,
+      "autocorr_lag1": 0.572
+    },
+    {
+      "group": "m_right_arm",
+      "model": "rtmpose",
+      "n_common": 520,
+      "mean": 0.0966,
+      "median": 0.0407,
+      "D_j": 0.0506,
+      "autocorr_lag1": 0.598
+    },
+    {
+      "group": "m_right_arm",
+      "model": "rtmo",
+      "n_common": 520,
+      "mean": 0.0743,
+      "median": 0.0339,
+      "D_j": 0.0317,
+      "autocorr_lag1": 0.706
+    },
+    {
+      "group": "m_right_arm",
+      "model": "openpose",
+      "n_common": 520,
+      "mean": 0.0763,
+      "median": 0.0414,
+      "D_j": 0.0354,
+      "autocorr_lag1": 0.625
+    },
+    {
+      "group": "m_left_leg",
+      "model": "blazepose",
+      "n_common": 520,
+      "mean": 0.0636,
+      "median": 0.0281,
+      "D_j": 0.0406,
+      "autocorr_lag1": 0.452
+    },
+    {
+      "group": "m_left_leg",
+      "model": "rtmpose",
+      "n_common": 520,
+      "mean": 0.0597,
+      "median": 0.0358,
+      "D_j": 0.0317,
+      "autocorr_lag1": 0.667
+    },
+    {
+      "group": "m_left_leg",
+      "model": "rtmo",
+      "n_common": 520,
+      "mean": 0.0431,
+      "median": 0.0266,
+      "D_j": 0.0207,
+      "autocorr_lag1": 0.669
+    },
+    {
+      "group": "m_left_leg",
+      "model": "openpose",
+      "n_common": 520,
+      "mean": 0.052,
+      "median": 0.0412,
+      "D_j": 0.0296,
+      "autocorr_lag1": 0.469
+    },
+    {
+      "group": "m_right_leg",
+      "model": "blazepose",
+      "n_common": 520,
+      "mean": 0.0683,
+      "median": 0.0313,
+      "D_j": 0.0417,
+      "autocorr_lag1": 0.495
+    },
+    {
+      "group": "m_right_leg",
+      "model": "rtmpose",
+      "n_common": 520,
+      "mean": 0.0621,
+      "median": 0.0362,
+      "D_j": 0.0326,
+      "autocorr_lag1": 0.652
+    },
+    {
+      "group": "m_right_leg",
+      "model": "rtmo",
+      "n_common": 520,
+      "mean": 0.0452,
+      "median": 0.0292,
+      "D_j": 0.0224,
+      "autocorr_lag1": 0.609
+    },
+    {
+      "group": "m_right_leg",
+      "model": "openpose",
+      "n_common": 520,
+      "mean": 0.0577,
+      "median": 0.0428,
+      "D_j": 0.0346,
+      "autocorr_lag1": 0.268
+    }
+  ],
+  "corr_m_head_raw": {
+    "blazepose": {
+      "blazepose": 1.0,
+      "rtmpose": 0.26,
+      "rtmo": 0.75,
+      "openpose": 0.613
+    },
+    "rtmpose": {
+      "blazepose": 0.26,
+      "rtmpose": 1.0,
+      "rtmo": 0.46,
+      "openpose": 0.361
+    },
+    "rtmo": {
+      "blazepose": 0.75,
+      "rtmpose": 0.46,
+      "rtmo": 1.0,
+      "openpose": 0.808
+    },
+    "openpose": {
+      "blazepose": 0.613,
+      "rtmpose": 0.361,
+      "rtmo": 0.808,
+      "openpose": 1.0
+    }
+  },
+  "corr_m_head_smooth_w5": {
+    "blazepose": {
+      "blazepose": 1.0,
+      "rtmpose": 0.475,
+      "rtmo": 0.891,
+      "openpose": 0.831
+    },
+    "rtmpose": {
+      "blazepose": 0.475,
+      "rtmpose": 1.0,
+      "rtmo": 0.639,
+      "openpose": 0.561
+    },
+    "rtmo": {
+      "blazepose": 0.891,
+      "rtmpose": 0.639,
+      "rtmo": 1.0,
+      "openpose": 0.953
+    },
+    "openpose": {
+      "blazepose": 0.831,
+      "rtmpose": 0.561,
+      "rtmo": 0.953,
+      "openpose": 1.0
+    }
+  },
+  "corr_mean5_raw": {
+    "blazepose": {
+      "blazepose": 1.0,
+      "rtmpose": 0.322,
+      "rtmo": 0.388,
+      "openpose": 0.436
+    },
+    "rtmpose": {
+      "blazepose": 0.322,
+      "rtmpose": 1.0,
+      "rtmo": 0.543,
+      "openpose": 0.421
+    },
+    "rtmo": {
+      "blazepose": 0.388,
+      "rtmpose": 0.543,
+      "rtmo": 1.0,
+      "openpose": 0.826
+    },
+    "openpose": {
+      "blazepose": 0.436,
+      "rtmpose": 0.421,
+      "rtmo": 0.826,
+      "openpose": 1.0
+    }
+  },
+  "corr_mean5_smooth_w5": {
+    "blazepose": {
+      "blazepose": 1.0,
+      "rtmpose": 0.509,
+      "rtmo": 0.712,
+      "openpose": 0.661
+    },
+    "rtmpose": {
+      "blazepose": 0.509,
+      "rtmpose": 1.0,
+      "rtmo": 0.649,
+      "openpose": 0.551
+    },
+    "rtmo": {
+      "blazepose": 0.712,
+      "rtmpose": 0.649,
+      "rtmo": 1.0,
+      "openpose": 0.957
+    },
+    "openpose": {
+      "blazepose": 0.661,
+      "rtmpose": 0.551,
+      "rtmo": 0.957,
+      "openpose": 1.0
+    }
+  }
+}

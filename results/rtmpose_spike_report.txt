@@ -1,0 +1,75 @@
+=== Диагностика выбросов m_head RTMPose ===
+порог достоверности точки: 0.3; кадров: 751; V_common (m_head валиден у всех 4 моделей): 511
+
+--- Топ-20 кадров по m_head (RTMPose) ---
+d_*(px) — сырое перемещение за 1 кадр; s — длина торса; loc_jump — скачок точки >200 px; scale_jump — s(t)/s(t-1) >2 или <0.5
+ frame  time_s  m_head  nose  l_eye  r_eye  l_ear  r_ear  max_head_px  d_midhip  d_midsho  s_prev  s_cur  s_ratio  min_c_head  loc_jump  scale_jump  in_Vcommon
+   542   21.68   6.828 887.0  946.0    NaN  953.0    NaN        953.0      48.0     412.0   431.0   80.0     0.18       0.248      True        True       False
+   578   23.12   5.529   NaN    NaN  166.0    NaN  161.0        166.0      14.0     100.0    95.0   21.0     0.22       0.267     False        True       False
+   576   23.04   3.189   NaN    NaN    NaN  237.0    NaN        237.0      97.0     106.0    52.0  146.0     2.84       0.333      True        True       False
+   585   23.40   3.094   NaN    NaN    NaN  217.0    NaN        217.0     109.0     142.0   179.0   73.0     0.40       0.266      True        True       False
+   572   22.88   2.949   NaN    NaN    NaN  181.0    NaN        181.0      66.0     183.0   226.0   50.0     0.22       0.251     False        True       False
+   579   23.16   2.902   NaN    NaN    NaN    NaN    7.0          7.0      24.0      15.0    21.0   54.0     2.60       0.224     False        True       False
+   547   21.88   2.586 787.0  826.0  837.0  808.0  791.0        837.0       9.0     633.0   369.0  270.0     0.73       0.369      True       False       False
+   571   22.84   2.226   NaN    NaN    NaN  299.0    NaN        299.0      74.0      41.0   141.0  226.0     1.61       0.251      True       False       False
+   463   18.52   2.164  27.0   23.0   31.0  316.0   43.0        316.0      19.0      40.0    76.0   39.0     0.51       0.318      True       False        True
+   573   22.92   1.915  83.0    NaN    NaN  142.0    NaN        142.0      59.0      59.0    50.0   89.0     1.78       0.410     False       False       False
+   464   18.56   1.746  17.0   28.0   23.0   25.0   15.0         28.0      63.0      35.0    39.0   93.0     2.40       0.332     False        True        True
+   584   23.36   1.743   NaN    NaN    NaN    NaN   34.0         34.0      30.0     101.0    49.0  179.0     3.67       0.310     False        True       False
+   462   18.48   1.717  50.0   49.0   47.0  261.0   54.0        261.0     118.0      36.0   108.0   76.0     0.71       0.345      True       False        True
+   692   27.68   1.514 499.0  529.0    NaN  114.0    NaN        529.0      49.0     201.0   230.0  318.0     1.38       0.542      True       False       False
+   580   23.20   1.331   NaN    NaN    NaN    NaN   69.0         69.0      67.0      16.0    54.0  122.0     2.27       0.259     False        True       False
+   685   27.40   1.183   NaN    NaN    NaN   67.0   72.0         72.0      94.0      15.0   107.0   53.0     0.50       0.298     False        True       False
+   575   23.00   1.093   NaN    NaN    NaN   67.0    NaN         67.0      50.0      72.0    87.0   52.0     0.59       0.233     False       False       False
+   687   27.48   1.041 267.0  203.0  305.0  216.0  127.0        305.0      73.0     170.0    45.0  272.0     6.00       0.302      True        True       False
+   459   18.36   0.990  92.0   91.0   99.0   72.0   86.0         99.0      53.0      28.0   145.0  111.0     0.76       0.441     False       False       False
+   684   27.36   0.975   NaN    NaN    NaN   88.0   80.0         88.0      46.0     118.0   250.0  107.0     0.43       0.250     False        True       False
+
+из топ-20: грубая ошибка локализации — 9, скачок масштаба — 12, оба фактора — 4, попадают в V_common — 3
+
+--- Дамп сырых координат t-2..t+2 (топ-5 выбросов) ---
+    точки: nose, left_eye, right_eye, left_ear, right_ear, left_shoulder, right_shoulder, left_hip, right_hip
+
+>> frame 542 (t=21.68 с), m_head=6.828, s=80 px
+  t-2: nose=(1552,850,c=0.47) left_eye=(1569,850,c=0.42) right_eye=(1586,839,c=0.46) left_ear=(1547,805,c=0.47) right_ear=(1558,889,c=0.46) left_shoulder=(1479,665,c=0.56) right_shoulder=(1429,889,c=0.54) left_hip=(1042,665,c=0.59) right_hip=(1070,805,c=0.55)
+  t-1: nose=(1485,879,c=0.32) left_eye=(1527,868,c=0.31) right_eye=(1532,863,c=0.27) left_ear=(1527,831,c=0.33) right_ear=(1517,879,c=0.32) left_shoulder=(1432,657,c=0.44) right_shoulder=(1411,857,c=0.37) left_hip=(979,662,c=0.37) right_hip=(1005,789,c=0.35)
+  t+0: nose=(603,783,c=0.32) left_eye=(593,722,c=0.32) right_eye=(618,828,c=0.25) left_ear=(583,707,c=0.36) right_ear=(1476,858,c=0.28) left_shoulder=(653,631,c=0.43) right_shoulder=(1395,666,c=0.36) left_hip=(1012,682,c=0.41) right_hip=(1067,772,c=0.39) <== выброс
+  t+1: nose=(652,777,c=0.22) left_eye=(617,768,c=0.23) right_eye=(1081,677,c=0.17) left_ear=(1064,621,c=0.24) right_ear=(1078,645,c=0.22) left_shoulder=(1037,621,c=0.27) right_shoulder=(1081,657,c=0.31) left_hip=(685,633,c=0.28) right_hip=(1093,665,c=0.30)
+  t+2: nose=(546,817,c=0.46) left_eye=(521,808,c=0.47) right_eye=(512,827,c=0.37) left_ear=(536,778,c=0.49) right_ear=(555,793,c=0.37) left_shoulder=(618,720,c=0.52) right_shoulder=(648,735,c=0.50) left_hip=(998,691,c=0.47) right_hip=(1027,701,c=0.46)
+
+>> frame 578 (t=23.12 с), m_head=5.529, s=21 px
+  t-2: nose=(1400,972,c=0.33) left_eye=(1472,975,c=0.37) right_eye=(1463,963,c=0.36) left_ear=(1451,951,c=0.36) right_ear=(1433,942,c=0.35) left_shoulder=(1475,891,c=0.39) right_shoulder=(1291,882,c=0.44) left_hip=(1400,740,c=0.41) right_hip=(1324,743,c=0.44)
+  t-1: nose=(1402,919,c=0.27) left_eye=(1414,937,c=0.27) right_eye=(1372,892,c=0.31) left_ear=(1402,883,c=0.26) right_ear=(1387,898,c=0.30) left_shoulder=(1483,883,c=0.32) right_shoulder=(1285,859,c=0.34) left_hip=(1423,773,c=0.34) right_hip=(1318,782,c=0.34)
+  t+0: nose=(1468,764,c=0.29) left_eye=(1444,782,c=0.27) right_eye=(1474,761,c=0.31) left_ear=(1423,746,c=0.29) right_ear=(1456,752,c=0.39) left_shoulder=(1285,776,c=0.41) right_shoulder=(1465,767,c=0.42) left_hip=(1318,782,c=0.37) right_hip=(1411,797,c=0.36) <== выброс
+  t+1: nose=(1475,811,c=0.22) left_eye=(1451,799,c=0.24) right_eye=(1463,775,c=0.25) left_ear=(1451,757,c=0.23) right_ear=(1460,757,c=0.30) left_shoulder=(1282,763,c=0.36) right_shoulder=(1451,754,c=0.34) left_hip=(1323,805,c=0.31) right_hip=(1424,820,c=0.32)
+  t+2: nose=(1405,705,c=0.26) left_eye=(1413,743,c=0.26) right_eye=(1411,731,c=0.29) left_ear=(1310,714,c=0.34) right_ear=(1405,717,c=0.37) left_shoulder=(1269,767,c=0.45) right_shoulder=(1431,749,c=0.44) left_hip=(1307,900,c=0.39) right_hip=(1428,858,c=0.39)
+
+>> frame 576 (t=23.04 с), m_head=3.189, s=146 px
+  t-2: nose=(1224,856,c=0.37) left_eye=(1216,852,c=0.35) right_eye=(1216,860,c=0.28) left_ear=(1204,821,c=0.42) right_ear=(1243,795,c=0.28) left_shoulder=(1202,801,c=0.39) right_shoulder=(1329,745,c=0.34) left_hip=(1325,789,c=0.38) right_hip=(1377,789,c=0.38)
+  t-1: nose=(1295,785,c=0.26) left_eye=(1279,801,c=0.23) right_eye=(1293,793,c=0.23) left_ear=(1267,801,c=0.31) right_ear=(1378,787,c=0.26) left_shoulder=(1267,825,c=0.32) right_shoulder=(1401,760,c=0.32) left_hip=(1316,831,c=0.31) right_hip=(1397,846,c=0.32)
+  t+0: nose=(1400,972,c=0.33) left_eye=(1472,975,c=0.37) right_eye=(1463,963,c=0.36) left_ear=(1451,951,c=0.36) right_ear=(1433,942,c=0.35) left_shoulder=(1475,891,c=0.39) right_shoulder=(1291,882,c=0.44) left_hip=(1400,740,c=0.41) right_hip=(1324,743,c=0.44) <== выброс
+  t+1: nose=(1402,919,c=0.27) left_eye=(1414,937,c=0.27) right_eye=(1372,892,c=0.31) left_ear=(1402,883,c=0.26) right_ear=(1387,898,c=0.30) left_shoulder=(1483,883,c=0.32) right_shoulder=(1285,859,c=0.34) left_hip=(1423,773,c=0.34) right_hip=(1318,782,c=0.34)
+  t+2: nose=(1468,764,c=0.29) left_eye=(1444,782,c=0.27) right_eye=(1474,761,c=0.31) left_ear=(1423,746,c=0.29) right_ear=(1456,752,c=0.39) left_shoulder=(1285,776,c=0.41) right_shoulder=(1465,767,c=0.42) left_hip=(1318,782,c=0.37) right_hip=(1411,797,c=0.36)
+
+>> frame 585 (t=23.40 с), m_head=3.094, s=73 px
+  t-2: nose=(1364,934,c=0.24) left_eye=(1422,882,c=0.26) right_eye=(1452,910,c=0.28) left_ear=(1361,812,c=0.28) right_ear=(1394,763,c=0.31) left_shoulder=(1217,815,c=0.38) right_shoulder=(1416,788,c=0.45) left_hip=(1245,812,c=0.42) right_hip=(1291,794,c=0.38)
+  t-1: nose=(1442,925,c=0.31) left_eye=(1424,885,c=0.34) right_eye=(1433,922,c=0.34) left_ear=(1412,837,c=0.35) right_ear=(1421,785,c=0.31) left_shoulder=(1427,806,c=0.40) right_shoulder=(1409,800,c=0.37) left_hip=(1242,797,c=0.40) right_hip=(1236,797,c=0.42)
+  t+0: nose=(1322,934,c=0.27) left_eye=(1325,878,c=0.28) right_eye=(1309,909,c=0.30) left_ear=(1195,844,c=0.32) right_ear=(1254,783,c=0.27) left_shoulder=(1186,813,c=0.40) right_shoulder=(1368,817,c=0.36) left_hip=(1359,798,c=0.34) right_hip=(1337,801,c=0.32) <== выброс
+  t+1: nose=(1289,933,c=0.22) left_eye=(1305,839,c=0.24) right_eye=(1260,936,c=0.24) left_ear=(1334,843,c=0.28) right_ear=(1215,817,c=0.21) left_shoulder=(1415,807,c=0.33) right_shoulder=(1189,807,c=0.34) left_hip=(1366,804,c=0.32) right_hip=(1240,807,c=0.33)
+  t+2: nose=(1214,957,c=0.33) left_eye=(1254,933,c=0.35) right_eye=(1207,940,c=0.35) left_ear=(1291,880,c=0.40) right_ear=(1164,860,c=0.30) left_shoulder=(1374,813,c=0.38) right_shoulder=(1164,840,c=0.43) left_hip=(1431,813,c=0.43) right_hip=(1381,840,c=0.38)
+
+>> frame 572 (t=22.88 с), m_head=2.949, s=50 px
+  t-2: nose=(1489,825,c=0.27) left_eye=(1501,798,c=0.29) right_eye=(1525,825,c=0.28) left_ear=(1492,834,c=0.30) right_ear=(1477,810,c=0.26) left_shoulder=(1245,921,c=0.34) right_shoulder=(1342,771,c=0.33) left_hip=(1173,753,c=0.30) right_hip=(1197,759,c=0.31)
+  t-1: nose=(1490,915,c=0.30) left_eye=(1498,932,c=0.32) right_eye=(1215,898,c=0.28) left_ear=(1200,900,c=0.31) right_ear=(1458,872,c=0.25) left_shoulder=(1260,929,c=0.35) right_shoulder=(1359,838,c=0.33) left_hip=(1229,682,c=0.32) right_hip=(1178,685,c=0.31)
+  t+0: nose=(1098,830,c=0.30) left_eye=(1093,801,c=0.28) right_eye=(1215,822,c=0.25) left_ear=(1106,747,c=0.34) right_ear=(1205,718,c=0.28) left_shoulder=(1119,752,c=0.43) right_shoulder=(1283,721,c=0.35) left_hip=(1210,736,c=0.32) right_hip=(1290,723,c=0.32) <== выброс
+  t+1: nose=(1173,865,c=0.44) left_eye=(1198,857,c=0.41) right_eye=(1175,854,c=0.45) left_ear=(1217,835,c=0.45) right_ear=(1156,827,c=0.44) left_shoulder=(1285,797,c=0.41) right_shoulder=(1152,787,c=0.57) left_hip=(1344,768,c=0.46) right_hip=(1257,751,c=0.42)
+  t+2: nose=(1224,856,c=0.37) left_eye=(1216,852,c=0.35) right_eye=(1216,860,c=0.28) left_ear=(1204,821,c=0.42) right_ear=(1243,795,c=0.28) left_shoulder=(1202,801,c=0.39) right_shoulder=(1329,745,c=0.34) left_hip=(1325,789,c=0.38) right_hip=(1377,789,c=0.38)
+
+--- RTMPose m_head: полный ряд vs V_common ---
+                 n     mean   median      D_j  autocorr
+полный ряд     723   0.1437   0.0477   0.0957     0.497
+V_common       511   0.0703   0.0367   0.0335     0.822
+
+Сохранено: C:\Users\nikit\VSCodeProjects\AVDModelTest\results\cross_scale_timeseries.png
+Сохранено: C:\Users\nikit\VSCodeProjects\AVDModelTest\results\rtmpose\rtmpose_head_decomposition.png
+Сохранено: C:\Users\nikit\VSCodeProjects\AVDModelTest\results\rtmpose\rtmpose_frame_diagnostics.csv

@@ -1,0 +1,30 @@
+{
+  "model": "RTMO",
+  "implementation": "rtmlib 0.0.16 one-stage: RTMO-m (детекция+поза, 640x640), ONNX Runtime CPU",
+  "model_files": [
+    "rtmo_m_body7_640x640.onnx"
+  ],
+  "person_selection": "поза с максимальным score (top-1 по NMS)",
+  "thresholds": {
+    "score_thr": 0.7,
+    "nms_thr": 0.45
+  },
+  "device": "CPU",
+  "cpu": {
+    "model": "13th Gen Intel(R) Core(TM) i9-13980HX",
+    "logical_processors": 32
+  },
+  "video": {
+    "file": "test_dance_30s.mp4",
+    "resolution": "1920x1080",
+    "fps": 25.0
+  },
+  "frames_processed": 751,
+  "frames_with_detection": 666,
+  "detection_rate": 0.8868,
+  "mean_confidence": 0.8759,
+  "processing_time_s": 59.423,
+  "processing_fps": 12.64,
+  "timing_note": "второй проход (после прогревочного), включая декодирование кадров",
+  "date": "2026-09-27T21:41:56"
+}

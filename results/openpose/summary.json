@@ -1,0 +1,43 @@
+{
+  "model": "OpenPose",
+  "video": "test_dance_30s.mp4",
+  "frames": 751,
+  "conf_threshold": 0.3,
+  "groups": {
+    "head": {
+      "mean_m": 0.0581,
+      "median_m": 0.037,
+      "D_j": 0.0283,
+      "valid_frames": 523,
+      "valid_rate": 0.6964
+    },
+    "left_arm": {
+      "mean_m": 0.0783,
+      "median_m": 0.0418,
+      "D_j": 0.0423,
+      "valid_frames": 531,
+      "valid_rate": 0.7071
+    },
+    "right_arm": {
+      "mean_m": 0.0753,
+      "median_m": 0.0405,
+      "D_j": 0.0349,
+      "valid_frames": 531,
+      "valid_rate": 0.7071
+    },
+    "left_leg": {
+      "mean_m": 0.0516,
+      "median_m": 0.0411,
+      "D_j": 0.0294,
+      "valid_frames": 531,
+      "valid_rate": 0.7071
+    },
+    "right_leg": {
+      "mean_m": 0.0573,
+      "median_m": 0.0424,
+      "D_j": 0.0342,
+      "valid_frames": 531,
+      "valid_rate": 0.7071
+    }
+  }
+}
